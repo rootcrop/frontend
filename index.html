@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">	<!-- data-bs-theme="dark" // codelab.pro/bystryj-start-v-bootstrap-5-utility-i-kastomizacziya-4/ -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>НЛК / Научный Личный Кабинет</title>
+	<!-- 	CDN #1: cdnjs.com/libraries/bootstrap 
+	 		CDN #2: www.bootstrapcdn.com 			-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>		<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'> -->
+
+	<style>
+		/* 	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+			.body-text { font-family: 'Open Sans', sans-serif; }				 							*/
+		h1,	h2,	h3,	h4,	h5,	h6,	p, body {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		h1 {
+			font-size: 54px;
+		}
+
+		.btn {
+			border-color: gray;
+		}
+
+		.btn-search {
+			color: lightYellow;
+			background-color: rgb(107, 5, 5);
+		}
+
+		.btn-search:focus,
+		.btn-search:hover {
+			color: rgb(68, 68, 11);
+			background-color: orange;
+			border-color: black;
+		}
+
+		.bg11 {
+			background-color: #E9ECEF;
+		}
+
+		.card-no-border {
+			--bs-card-border-color: none;
+			--bs-body-bg: none;
+		}
+
+		.padd1 { /* top, right, bottom, left */
+			padding: 30px 140px 30px 0px;
+		}
+
+		.padd2 {
+			padding: 40px 20px 0px 20px;
+		}
+
+		.padd3 {
+			padding: 30px 140px 30px 30px;
+		}
+
+		.table {
+			border: lightgray;
+		}
+
+		.link-primary {
+			color: #be0909 !important;
+			text-decoration: none;
+		}
+
+		.link-primary:hover {
+			color: #ff9100 !important;
+			text-decoration: none;
+		}
+
+		.icon-link>.bi {
+			height: 1.5em;
+			transition: 0.22s ease-in-out transform;
+		}
+
+		.icon-link-hover:hover>.bi,
+		.icon-link-hover:focus-visible>.bi {
+			transform: var(--bs-icon-link-transform, translate3d(0em, -0.3em, 0em));
+			height: 1.5em;
+		}
+
+		.gradient-menu {				 /*  mdbootstrap.com/docs/standard/extended/gradient-background/ */
+			background: #E9ECEF;  		/* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, rgba(233, 236, 239, 0.01), rgba(212, 211, 205, 0.3)); /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, rgba(233, 236, 239, 0.01), rgba(212, 211, 205, 0.3))		  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+
+		.gradient-table {
+			background: #E9ECEF;
+			background: -webkit-linear-gradient(to right, rgba(212, 211, 205, 0.3), rgba(233, 236, 239, 0.01));
+			background: linear-gradient(to right, rgba(212, 211, 205, 0.3), rgba(233, 236, 239, 0.01))
+		}
+
+		.gradient-bottom {
+			background: #E9ECEF;
+			background: -webkit-linear-gradient(to right, rgba(233, 236, 239, 0.1), rgba(212, 211, 205, 1));
+			background: linear-gradient(to right, rgba(233, 236, 239, 0.1), rgba(212, 211, 205, 1))
+		}
+	</style>
+</head>
+
+<body>
+
+	<body>
+		<div>
+			<nav class="navbar my-primary navbar-expand-lg bg-body-tertiary bg-dark gradient-menu" data-bs-theme="dark"
+				style="padding-left: 10px;">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="">
+						<i class="bi-activity" style="font-size: 1.4rem; color: orange;"></i> НЛК</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Переключатель навигации">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">
+									<i class="bi-journal-text" style="font-size: 1rem; color:orange;"></i>
+									Портфолио</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="bi bi-sort-down" style="font-size: 1rem; color:orange;"></i>
+									Рейтинг</a>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									<i class="bi bi-question-circle" style="font-size: 1rem; color:orange;"></i>
+									Помощь
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Первая помощь</a></li>
+									<li><a class="dropdown-item" href="#">Дополнительная помощь</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Написать нам</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled"> . </a>
+							</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+							<button class="btn btn-outline-success btn-search" type="submit">Искать</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+
+			<div class="bg gradient-custom w-100"
+				style="background-image: url('background4.jpg'); background-size: cover; background-position: top;">
+				<div class="container">
+					<div class="card mb-6 card-no-border padd1">
+						<div class="card-body">
+							<h1>Портфолио</h1>
+							<p class="card-text body-text">Это место, где собраны ваши научные публикации. Здесь вы
+								можете
+								добавлять свои работы, получать информацию об их уникальности и смотреть отзывы ваших
+								научных
+								руководителей.</p>
+							<p>It is a long established fact that a reader will be distracted by the
+								readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+								that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+								here, content here', making it look like readable English.</p>
+							<a href="#" class="btn btn-primary btn-search">Добавить работу</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 g-5"> <!-- или мой вариант: padd2 или gx-5 gy-5 -->
+						<div class="card">
+							<div class="card-header gradient-table"> Ваш профиль
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Сергей Павлович Фролов</h5>
+								<p class="card-text">Научная степень: Магистр.
+									Специализация: Инвестиционные проблемы экономически развивающихся рынков.</p>
+								<a href="#" class="btn btn-primary btn-search">Редактировать</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-lg-4 gx-5 gy-5">
+						<div class="card">
+							<div class="card-header gradient-table">Статистика
+							</div>
+							<div class="card-body">
+								<p class="card-text"><b>На платформе:</b> 8 лет. <br>
+									<b>Добавлено работ:</b> 9.<br>
+									<b>Средняя уникальность:</b> 75%.<br>
+									<b>Языки работ:</b> русский, английский.
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="container padd2 py-5 overflow-x-auto"> <!-- getbootstrap.com/docs/5.3/utilities/overflow/ -->
+				<table class="table table-bordered table-hover"> <!-- table-striped -->
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Название работы</th>
+							<th scope="col">Дата загрузки</th>
+							<th scope="col">Научный руководитель</th>
+							<th scope="col">Уникальность</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Привлечение инвестиций как фактор развития экономики</td>
+							<td>21.05.2019</td>
+							<td>Асаншоева А.М.</td>
+							<td>89%</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Мировой валютный рынок коммодитис</td>
+							<td>21.05.2019</td>
+							<td>Асаншоева А.М.</td>
+							<td>85%</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>The role of accounting in sustainable development</td>
+							<td>11.02.2019</td>
+							<td>Шаляпина В.С.</td>
+							<td>78%</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Сценарный анализ как инструмент учета рисков инвестиционного проекта</td>
+							<td>05.09.2018</td>
+							<td>Васильев М.Г.</td>
+							<td>67%</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Глобальные и региональные инвестиционные тенденции</td>
+							<td>09.07.2018</td>
+							<td>Асаншоева А.М.</td>
+							<td>73%</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>Systemic risks in financial markets</td>
+							<td>09.07.2016</td>
+							<td>Леонидов В.Б.</td>
+							<td>77%</td>
+						</tr>
+
+						<tr>
+							<th scope="row">7</th>
+							<td>The influence of tax regulation liberalisation on the domestic debt market</td>
+							<td>11.03.2018</td>
+							<td>Шаляпина В.С.</td>
+							<td>81%</td>
+						</tr>
+						<tr>
+							<th scope="row">8</th>
+							<td>Влияние безработицы на экономику СНГ</td>
+							<td>19.02.2016</td>
+							<td>Васильев М.Г.</td>
+							<td>63%</td>
+						</tr>
+						<tr>
+							<th scope="row">9</th>
+							<td>Решение проблем ренновации жилищного фонда Российской Федерации</td>
+							<td>19.02.2015</td>
+							<td>Васильев М.Г.</td>
+							<td>68%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<footer class="text-body-secondary py-5 bg-light gradient-bottom w-100" style="height: 160px;">
+				<div class="container">
+					<!-- Класс .w-100 задаёт ширину элемента на 100% от ширины его родителя
+					 	gutter класс для управления отступом между колонками,  gx-5 горизонтальные, gy-5 вертикальные gutters
+						py-5 класс утилиты padding добавляет отступ сверху и снизу элемента
+						mb-4 нижний внешний отступ элемента 1,5rem -->
+					<p class="mb-1 py-1">
+						©2024 Научный личный кабинет. Все права защищены
+					</p>
+					<p class="float-end mb-1">
+						<a href="#" class="link-primary icon-link icon-link-hover">
+							<i class="bi bi-arrow-up-circle"></i>
+							Наверх</a>
+					</p>
+
+					<p class="mb-0">
+						Посетите <a href="#" class="link-primary">домашнюю страницу</a> научного портала или
+						ознакомьтесь с нашим <a href="#" class="link-primary">руководством</a> по началу
+						работы.
+					</p>
+				</div>
+			</footer>
+	</body>
+
+</html>
+<!-- 	Breakpoints (брейкпоинтс) - значения ширины экрана, при которых происходит переключение отображения колонок. 
+ 		Это ширина, которая прописана в медиа-запросах сетки, в flexboxgrid2 брейкпоинтс такие:
+			xs: 0..575px	extra small
+			sm: 576..767px	small
+			md: 768..991px	medium
+			lg: 992..1199px	large
+			xl: 1200.1400px	extra large
+			xxl: >1400px	ex.ex.large		-->
