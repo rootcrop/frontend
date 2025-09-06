@@ -17,4 +17,4 @@ README.RU: Научный Личный Кабинет (НЛК)
 + Кастомные стили кнопок и форм
 + Градиентные фоны и эффекты наведения
 
-[Ссылка >>> rootcrop.github.io/nlk_frontend]:https://rootcrop.github.io/nlk_frontend/
+[Ссылка](https://rootcrop.github.io/nlk_frontend/)
