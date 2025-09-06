@@ -1,15 +1,12 @@
-README.ENG : Scientific Personal Account (NLK)
-[ README.RU: Научный Личный Кабинет (НЛК) ](https://github.com/rootcrop/nlk_frontend/blob/main/README.md)
+README.ENG : Scientific Personal Account (NLK) // [ README.RU: Научный Личный Кабинет (НЛК) ](https://github.com/rootcrop/nlk_frontend/blob/main/README.md)
 
 # Project Description
 The Scientific Personal Account (NLC) is a layout and design project for a web-based scientific publication management platform
 
-#
-Technologies technologies used :
+# Technologies technologies used :
 + Frontend: HTML5, Bootstrap 5.3.8, JavaScript
 + Icons: Bootstrap Icons
 + Fonts: Google Fonts Roboto
-+ Adaptability: Fully responsive design for all devices
 + Themes: Support for light and dark themes
 
 # Features
@@ -27,8 +24,8 @@ Bootstrap 5.3.X supports the following minimum browser versions
 + Microsoft Edge: latest stable versions supported
 + Opera: The latest stable versions are supported
 
-#Does not support browsers
+# Does not support browsers
 - Internet Explorer (IE): including versions 10 and 11 (requires Bootstrap 4)
 - Proxy browsers are not supported: Opera Mini, Opera Mobile Turbo, UC Browser Mini, Amazon Silk
 
-( rootcrop.github.io/nlk_frontend/ )[https://rootcrop.github.io/nlk_frontend/]
+Site: [rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/nlk_frontend/)
