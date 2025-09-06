@@ -221,7 +221,6 @@
 </head>
 
 <body>
-
     <body>
         <div>
             <nav class="navbar my-primary navbar-expand-lg bg-body-tertiary bg-dark gradient-menu py-2" data-bs-theme="dark"
@@ -267,7 +266,8 @@
                             </li>
                         </ul>
 
-                        <div class="form-check form-switch btn btn-theme">
+                        <!-- d-none d-lg-block  скрываем див переключения на экранах меньше lg(992px) -->
+                        <div class="form-check form-switch btn btn-theme d-none d-lg-block">
                             <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
                             <label class="form-check-label" for="themeSwitch"> переключить тему </label>
                         </div>
@@ -296,7 +296,7 @@
                 <div class="container">
                     <div class="card mb-6 card-no-border padd1">
                         <div class="card-body">
-                            <h1>Портфолио</h1>
+                            <h1 class="display-2">Портфолио</h1>
                             <p class="card-text body-text">Это место, где собраны ваши научные публикации. Здесь вы
                                 можете
                                 добавлять свои работы, получать информацию об их уникальности и смотреть отзывы ваших
