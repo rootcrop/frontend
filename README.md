@@ -1,5 +1,4 @@
-README.RU: Научный Личный Кабинет (НЛК)
-[README.ENG : Scientific Personal Account (NLK)](url)
+README.RU: Научный Личный Кабинет (НЛК)  //  [README.ENG : Scientific Personal Account (NLK)](https://github.com/rootcrop/nlk_frontend/blob/main/readme_eng.md)
 
 # Описание проекта
 Научный Личный Кабинет (НЛК) - это проект верстки и дизайна для веб-платформы управления научными публикациями
@@ -27,8 +26,8 @@ Bootstrap 5.3.X поддерживает следующие минимальны
 + Microsoft Edge: поддерживаются последние стабильные версии
 + Opera: Поддерживаются последние стабильные версии
 
-#Не поддерживает браузеры
+# Не поддерживает браузеры
 - Internet Explorer (IE): включая версии 10 и 11 (требуется Bootstrap 4)
 - Proxy-браузеры не поддерживаются: Opera Mini, Opera Mobile Turbo, UC Browser Mini, Amazon Silk
 
-[Ссылка:rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/nlk_frontend/)
+Пример сайта: [rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/nlk_frontend/)
