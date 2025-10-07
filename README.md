@@ -34,4 +34,4 @@ Bootstrap 5.3.X поддерживает следующие минимальны
 - Opera Mini, Opera Mobile Turbo, UC Browser Mini, Amazon Silk
 - Internet Explorer (IE): включая версии 10 и 11 (менее <2% пользователей)
 
-Превью просмотр: [rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/nlk_frontend/)
+Превью просмотр: [rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/frontend/)
