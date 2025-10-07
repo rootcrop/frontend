@@ -1,8 +1,5 @@
 README.RU: Научный Личный Кабинет (НЛК)  //  [README.ENG : Scientific Personal Account (NLK)](https://github.com/rootcrop/nlk_frontend/blob/main/readme_eng.md)
 
-# Макет 
-[url](https://www.figma.com/design/F5bdrOcsf4timWBERNSTsK/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D0%91%D1%83%D1%82%D1%81%D1%82%D1%80%D0%B0%D0%BF--Copy-)
-
 # Описание проекта
 Научный Личный Кабинет (НЛК) - это проект верстки и дизайна для веб-платформы управления научными публикациями
 
@@ -20,6 +17,10 @@ README.RU: Научный Личный Кабинет (НЛК)  //  [README.ENG 
 + Кастомные стили кнопок и форм
 + Градиентные фоны и эффекты наведения
 
+# Макет 
+ссылка на дизайн макета с www.figma.com
+[url](https://www.figma.com/design/F5bdrOcsf4timWBERNSTsK/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D0%91%D1%83%D1%82%D1%81%D1%82%D1%80%D0%B0%D0%BF--Copy-)
+
 # Браузерная совместимость
 Bootstrap 5.3.X поддерживает следующие минимальные версии браузеров
 + Chrome: ≥ 60
@@ -33,4 +34,4 @@ Bootstrap 5.3.X поддерживает следующие минимальны
 - Internet Explorer (IE): включая версии 10 и 11 (требуется Bootstrap 4)
 - Proxy-браузеры не поддерживаются: Opera Mini, Opera Mobile Turbo, UC Browser Mini, Amazon Silk
 
-Пример сайта: [rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/nlk_frontend/)
+Превью просмотр: [rootcrop.github.io/nlk_frontend/](https://rootcrop.github.io/nlk_frontend/)
